@@ -4,6 +4,6 @@ exports.handler = async function(event, context) {
   console.log(process.env);
   return {
     statusCode: 200,
-    body: JSON.stringify({ event, context })
+    body: JSON.stringify({ event, context, process_env: process.env })
   };
 };
