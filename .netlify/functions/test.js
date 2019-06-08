@@ -1,4 +1,4 @@
-import airtable from "airtable";
+const airtable = require("airtable");
 
 exports.handler = async function(event, context) {
   console.log(event);
